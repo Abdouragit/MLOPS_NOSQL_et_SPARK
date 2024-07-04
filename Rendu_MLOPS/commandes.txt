@@ -1,0 +1,14 @@
+cd "Documents/Travail/Univ/M2 SISE/Mlops/seance 3/mlops-td"
+
+------ lancement local api
+uvicorn --reload --host 0.0.0.0 app:app
+
+------ lancement docker de l'appli et la database
+
+docker-compose up
+
+------ recréer les images
+docker-compose up --build
+
+
+------ supprimer les images
