@@ -1,0 +1,51 @@
+# ------ lancer le notebook
+jupyter notebook
+
+# ----- installer l'image de redis 
+
+docker pull redis
+
+# ------ créer le container
+ docker run --name redis_server -p 6379:6379 -d redis
+
+
+# ------ lancer le container
+docker start redis_server
+
+docker stop redis_server
+docker kill redis_server
+
+
+
+# ----- installer l'image de mongo:4.4
+
+docker pull mongo
+
+# ------ créer le container
+ docker run --name mongo_server -p 27017:27017 -d mongo:4.4
+
+
+# ------ lancer le container
+docker start mongo_server
+
+docker stop mongo_server
+docker kill mongo_server
+
+
+
+
+# ----- installer l'image de orientdb
+
+docker pull orientdb
+
+# ------ créer le container
+ docker run --name orientdb_server -p 2424:2424 -d orientdb
+
+
+# ------ lancer le container
+docker start orientdb_server
+
+docker stop orientdb_server
+docker kill orientdb_server
+
+# ------ 
